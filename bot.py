@@ -6,7 +6,7 @@ import threading
 import time
 
 # تنظیمات اولیه
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  # توکن ربات را اینجا قرار بده
+TOKEN = "7958571747:AAGQvtnz8BgKIaPM1o0WQeoolJAsXdzEHwM"  # توکن ربات را اینجا قرار بده
 DB_NAME = "reminders.db"
 
 # ایجاد دیتابیس SQLite
