@@ -1,4 +1,4 @@
-import sqlite3
+"""import sqlite3
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 from datetime import datetime, timedelta
@@ -146,4 +146,18 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    main()
+    main()"""
+import sqlite3
+from telegram import Update
+from telegram.ext import Updater, CommandHandler
+
+TOKEN = "YOUR_TOKEN"
+
+def start(update: Update, context):
+    update.message.reply_text("Bot is working!")
+
+updater = Updater(TOKEN)
+updater.dispatcher.add_handler(CommandHandler("start", start))
+print("Bot started test mode")
+updater.start_polling()
+updater.idle()
